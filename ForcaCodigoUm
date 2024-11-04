@@ -1,0 +1,65 @@
+package Forca.LPA;
+
+
+import java.util.*;
+
+public class Forca {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Digite o modo: 'animal' " );
+		String selec = sc.nextLine();
+		
+		if (selec.equals("animal")  ) {
+			
+			System.out.println("Opcao animal selecionado");
+			
+			Animal();
+			
+		}
+		
+		
+	}
+
+public static void Animal() {
+	Random select = new Random(19);
+	Scanner sc = new Scanner(System.in);
+		
+		
+		String[] animalLista = new String [19];
+		
+		animalLista[0]= "cachorro";
+		animalLista[1]= "gato";
+		animalLista[2]= "papagaio";
+		animalLista[3]= "piriquito";
+		animalLista[4]= "tartaruga";
+		animalLista[5]= "aguia";
+		animalLista[6]= "elefante";
+		animalLista[7]= "girafa";
+		animalLista[8]= "leao";
+		animalLista[9]= "macaco";
+		animalLista[10]= "tatu";
+		animalLista[11]= "jacare";
+		animalLista[12]= "hipopotamo";
+		animalLista[13]= "avestruz";
+		animalLista[14]= "camelo";
+		animalLista[15]= "rinoceronte";
+		animalLista[16]= "javali";
+		animalLista[17]= "suricato";
+		animalLista[18]= "ornitorrinco";
+		animalLista[19]= "esquilo";
+		
+		for (int i = 1; i <= 7; i++ ) {
+			
+			if (sc.nextLine()  == animalLista[i]) {
+			
+				return;
+				
+				
+		}else if (sc.nextLine() != animalLista[i]) {
+			
+			
+			}
+		}
+	}
+}
