@@ -4,11 +4,47 @@ package Forca;
 
 import java.util.*;
 
-
+/*
 public class  ListaAnimais {
     Random Aleatorio = new Random(19);
+    private String Animais;
 
-    public String Animais() {
+    private void  Animais() {
+
+        int Escolha = Aleatorio.nextInt(19);
+
+
+
+
+
+
+
+
+    }
+
+    public void Animal (String Animais ){
+
+    this.Animais = Animais;
+
+
+
+
+    }
+
+}
+*/
+
+public class ListaAnimais  {
+    private String Animais;
+
+
+    public String getAnimais (){
+
+        return this.Animais;
+            }
+
+    public void setAnimais(){
+        Random Aleatorio = new Random(19);
 
         int Escolha = Aleatorio.nextInt(19);
 
@@ -37,9 +73,9 @@ public class  ListaAnimais {
         Animais[19] = "Leopardo.";
 
 
-        return "";
-    }
 
 
+        this.Animais = Animais[Escolha];
 
+        }
 }

@@ -11,7 +11,7 @@ public class Forca {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        ListaAnimais[] ListaAnimais = new ListaAnimais[20];
+        ListaAnimais ListaAnimais = new ListaAnimais();
         ListaPaises[] ListaPaises = new ListaPaises[20];
 
 
@@ -25,8 +25,8 @@ public class Forca {
 
         String Modo = sc.nextLine();
 
-        System.out.println(Arrays.deepToString(ListaAnimais));
 
+        System.out.println(ListaAnimais.getAnimais());
 
 
 
